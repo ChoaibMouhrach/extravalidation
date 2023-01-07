@@ -1,0 +1,28 @@
+{
+    "name": "extravalidation",
+    "version": "0.0.1-beta.1",
+    "description": "This library provides support for validation in Typescript and Typescript ES6/CommonJS.",
+    "module": "lib/es6/index.js",
+    "main": "lib/es5/index.js",
+    "files": [
+        "lib",
+        "../README.md",
+        "package.json"
+    ],
+    "keywords": [
+        "validate",
+        "validation",
+        "revalidate",
+        "check"
+    ],
+    "author": "Choaib Mouhrach",
+    "license": "ISC",
+    "homepage": "https://github.com/PACY2/extravalidation#readme",
+    "bugs": {
+        "url": "https://github.com/PACY2/extravalidation/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PACY2/extravalidation.git"
+    }
+}

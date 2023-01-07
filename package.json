@@ -1,0 +1,11 @@
+{
+    "name": "extravalidation",
+    "version": "0.0.1",
+    "description": "This is the source for extravalidation package",
+    "scripts": {
+        "build": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.4"
+    }
+}

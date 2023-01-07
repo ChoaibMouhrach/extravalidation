@@ -1,9 +1,9 @@
 {
     "name": "extravalidation",
-    "version": "0.0.1-beta.1",
+    "version": "0.0.3-beta.1",
     "description": "This library provides support for validation in Typescript and Typescript ES6/CommonJS.",
-    "module": "lib/es6/index.js",
-    "main": "lib/es5/index.js",
+    "module": "lib/es5/index.js",
+    "main": "lib/es6/index.js",
     "files": [
         "lib",
         "../README.md",

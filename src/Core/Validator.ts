@@ -110,7 +110,7 @@ export class Validator {
             throw Error("The gt(greater than) rule does not apply to non-number data types.");
         }
 
-        return this.test(value > params.value, `This field must be greater than ${value}.`);
+        return this.test(value > params.value, `This field must be greater than ${params.value}.`);
     };
 
     gte = (key: string, params: Params): [boolean, string | null] => {
@@ -120,7 +120,7 @@ export class Validator {
             throw Error("The gte(greater than or equal) rule does not apply to non-number data types.");
         }
 
-        return this.test(value >= params.value, `This field must be greater than or equal to ${value}.`);
+        return this.test(value >= params.value, `This field must be greater than or equal to ${params.value}.`);
     };
 
     lt = (key: string, params: Params): [boolean, string | null] => {
@@ -130,7 +130,7 @@ export class Validator {
             throw Error("The lt(less than) rule does not apply to non-number data types.");
         }
 
-        return this.test(value < params.value, `	This field must be less than ${value}.`);
+        return this.test(value < params.value, `	This field must be less than ${params.value}.`);
     };
 
     lte = (key: string, params: Params): [boolean, string | null] => {
@@ -140,7 +140,7 @@ export class Validator {
             throw Error("The lte(less than or equal) rule does not apply to non-number data types.");
         }
 
-        return this.test(value <= params.value, `	This field must be less than or equal to ${value}.`);
+        return this.test(value <= params.value, `	This field must be less than or equal to ${params.value}.`);
     };
 
     number = (key: string): [boolean, string | null] => this.test(!isNaN(this.userValues[key]), `This field must be a number.`);
@@ -166,7 +166,7 @@ export class Validator {
             throw Error("The minimum value rule does not apply to non-string data types.");
         }
 
-        return this.test(value.length >= params.value, `This field must be at least ${value} characters long.`);
+        return this.test(value.length >= params.value, `This field must be at least ${params.value} characters long.`);
     };
 
     max = (key: string, params: Params): [boolean, string | null] => {
@@ -176,7 +176,7 @@ export class Validator {
             throw Error("The maximum value rule does not apply to non-string data types.");
         }
 
-        return this.test(value.length <= params.value, `This field must be no more than ${value} characters long.`);
+        return this.test(value.length <= params.value, `This field must be no more than ${params.value} characters long.`);
     };
 
     uppercase = (key: string): [boolean, string | null] => {
